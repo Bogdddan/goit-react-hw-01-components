@@ -14,7 +14,7 @@ export const Transactions = ({ items }) => {
             border: 'none',
             textAlign: 'left',
             fontSize: '15px',
-            borderTop: '3px solid #fff',
+            borderTop: '2.5px solid #fff',
             borderBottom: '3px solid red',}}>Type
         </th>
         <th style={{fontWeight: 'bold',
