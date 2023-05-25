@@ -1,39 +1,16 @@
 import PropTypes from 'prop-types';
+import './Transaction.css';
 
 export const Transactions = ({ items }) => {
     return (
-        <table style={{
-            margin: '0 auto',
-            border: '1px solid black',
-        }} class="transaction-history">
+        <table className='table'>
     <thead>
     <tr>
-        <th style={{fontWeight: 'bold',
-            padding: '7px',
-            background: 'red',
-            border: 'none',
-            textAlign: 'left',
-            fontSize: '15px',
-            borderTop: '2.5px solid #fff',
-            borderBottom: '3px solid red',}}>Type
+        <th className='tableth'>Type
         </th>
-        <th style={{fontWeight: 'bold',
-            padding: '7px',
-            background: 'red',
-            border: 'none',
-            textAlign: 'left',
-            fontSize: '15px',
-            borderTop: '3px solid #fff',
-            borderBottom: '3px solid red',}}>Amount
+        <th className='tableth'>Amount
         </th>
-        <th style={{fontWeight: 'bold',
-            padding: '7px',
-            background: 'red',
-            border: 'none',
-            textAlign: 'left',
-            fontSize: '15px',
-            borderTop: '3px solid #fff',
-            borderBottom: '3px solid red',}}>Currency
+        <th className='tableth'>Currency
         </th>
     </tr>
     </thead>
@@ -41,26 +18,13 @@ export const Transactions = ({ items }) => {
     <tbody>
         {items.map(item => (
             <tr>
-                <td style={{padding: '7px',
-                    border: 'none',
-                    borderTop: '3px solid black',
-                    borderBottom: '3px solid #fff',
-                    borderRight: '3px solid black',
-                    fontSize: '15px',}}>
+                <td className='tabletd'>
                     {item.type}
                 </td>
-                <td style={{padding: '7px',
-                    borderTop: '3px solid black',
-                    borderBottom: '3px solid #fff',
-                    borderRight: '3px solid black',
-                    fontSize: '15px',}}>
+                <td className='tabletd'>
                     {item.amount}
                 </td>
-                <td style={{padding: '7px',
-                    borderTop: '3px solid black',
-                    borderBottom: '3px solid #fff',
-                    borderRight: '3px solid #fff',
-                    fontSize: '15px',}}>
+                <td className='tabletd'>
                     {item.currency}
                 </td>
             </tr>

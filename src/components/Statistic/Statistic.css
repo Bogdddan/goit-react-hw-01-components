@@ -1,6 +1,6 @@
 .statistics {
     display: flex;
-    max-width: 33%;
+    max-width: 70%;
     flex-direction: column;
     margin: 80px auto;
     border: 1px black solid;
