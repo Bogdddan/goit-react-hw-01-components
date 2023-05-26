@@ -1,29 +1,29 @@
 import PropTypes from 'prop-types';
-import './Profile.css'
+import css from './Profile.module.css'
 
 
 export const Profile =({username, tag, location, avatar, stats}) => {
     return (
-        <div className='obgortka'>
-        <div className='user-info'>
-            <img src={avatar} className='user-avatar' alt="User avatar"/>
-            <p className='user-name'>{username}</p>
-            <p className='user-tag'>@{tag}</p>
-            <p className='user-location'>{location}</p>
+        <div className={css.obgortka}>
+        <div className={css.info}>
+            <img src={avatar} className={css.useravatar} alt="User avatar"/>
+            <p className={css.username}>{username}</p>
+            <p className={css.usertag}>@{tag}</p>
+            <p className={css.userlocation}>{location}</p>
         </div>
 
-        <ul className='stats-ul'>
-            <li className='stats-li'>
-                <span className='statswq'>Followers</span>
-                <span className='user-info'>{stats.followers}</span>
+        <ul className={css.statsul}>
+            <li className={css.statsli}>
+                <span className={css.statswq}>Followers</span>
+                <span className={css.userinform}>{stats.followers}</span>
             </li>
-            <li className='stats-li'>
-                <span className='statswq'>Views</span>
-                <span className='user-info'>{stats.views}</span>
+            <li className={css.statsli}>
+                <span className={css.statswq}>Views</span>
+                <span className={css.userinform}>{stats.views}</span>
             </li>
-            <li className='stats-li'>
-                <span className='statswq'>Likes</span>
-                <span className='user-info'>{stats.likes}</span>
+            <li className={css.statsli}>
+                <span className={css.statswq}>Likes</span>
+                <span className={css.userinform}>{stats.likes}</span>
             </li>
         </ul>
     </div>

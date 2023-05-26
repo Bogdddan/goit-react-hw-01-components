@@ -6,6 +6,8 @@
 
 .friendList {
     display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 33%;
     gap: 24px;
     flex-direction: column;
